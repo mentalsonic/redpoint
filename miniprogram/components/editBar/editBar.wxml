@@ -1,0 +1,23 @@
+<van-row custom-class="row">
+  <van-col span="14">
+            <van-cell title="Open" border="{{false}}">
+            <view>
+              <van-switch checked="{{ open }}" bind:change="onChange" />
+            </view>
+          </van-cell>
+  </van-col>
+  <van-col span="5">
+            <van-cell border="{{false}}">
+            <view slot="title">
+            <van-button icon="edit" bind:click="onEdit"/>
+            </view>
+          </van-cell>
+  </van-col>
+    <van-col span="5">
+            <van-cell border="{{false}}">
+            <view slot="title">
+            <van-button icon="delete" bind:click="onDelete"/>
+            </view>
+          </van-cell>
+  </van-col>
+</van-row>

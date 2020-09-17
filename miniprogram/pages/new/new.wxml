@@ -1,0 +1,21 @@
+
+<van-cell-group title="帖子类型 Post type">
+  <van-cell center title="{{type}}">
+    <view>
+    <van-button size="small" bind:click="showPopup">选择发帖类别 Choose a tag</van-button>
+    </view>
+  </van-cell>
+</van-cell-group>
+
+<van-popup show="{{ show }}" round position="bottom" custom-style="height: 60%" bind:close="onClose">
+<van-picker  
+show-toolbar	
+title="Post type"	
+columns="{{ types }}"
+default-index="{{ 0 }}"
+bind:cancel="onCancel"
+bind:confirm="onConfirm" />
+</van-popup>
+
+<postForm  type = "{{type}}"/>
+

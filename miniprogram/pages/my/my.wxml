@@ -1,0 +1,16 @@
+<van-tabs active="{{ active }}" sticky bind:click="switchTab">
+    <van-tab wx:for="{{tags}}" wx:key="*this" : title="{{item}}" >
+        <!-- <block wx:for="{{tabList}}" wx:key="index">
+          <postListItem post="{{item}}"/>
+          <block wx:if="{{owner===visitor}}">
+            <editBar _id="{{item._id}}" open="{{item.open}}" draft="{{item.draft}}" files="{{item.files}}" bind:showForm="showForm"/>
+          </block>
+        </block> -->
+    </van-tab>
+</van-tabs>
+
+<postList isHome="{{false}}" activeTab="{{activeTab}}" id="myPostList" owner="{{owner}}" bind:showForm="showForm"/>
+
+<van-popup show="{{ show }}" closeable bind:close="onClose">
+<postForm _id="{{_id}}"/>
+</van-popup>

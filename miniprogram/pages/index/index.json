@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "postList":"/components/postList/postList"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "首页 Home"
+}

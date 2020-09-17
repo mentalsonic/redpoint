@@ -1,0 +1,22 @@
+<view
+style="width:750rpx;height:350rpx;background-color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:50rpx;position:relative">
+<van-image round width="150rpx" height="150rpx" fit="cover" src="{{owner.avatarUrl}}" />
+<view style="margin-top: 20rpx;font-weight:700">
+{{owner.nickName}}
+</view>
+<view style="margin-top: 10rpx;color:#808080; font-size:25rpx">
+{{owner.province}} {{owner.city}}
+</view>
+</view>
+
+
+<van-cell-group title="我的 My">
+<block wx:for="{{tags}}" wx:key="index">
+  <van-cell isLink bind:click="goToMy" data-idx="{{index}}">
+    <view slot="title">
+      <text style="padding-right: 20rpx">{{item}}</text>
+      <van-tag round type="primary"> {{count[index]}} </van-tag>
+    </view>
+  </van-cell>
+</block>
+</van-cell-group>

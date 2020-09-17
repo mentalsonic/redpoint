@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "postListItem": "/components/postListItem/postListItem",
+    "editBar":"/components/editBar/editBar",
+    "van-popup": "@vant/weapp/popup/index",
+    "postForm": "/components/postForm/postForm",
+    "postList": "/components/postList/postList"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,26 @@
+<wxs module="m1">
+module.exports.dateFormat = function(ts){
+  var time = getDate(ts);
+	var year = time.getFullYear();
+	var month = time.getMonth() + 1;
+	var date = time.getDate();
+	month = month < 10 ? "0" + month : month;
+	date = date < 10 ? "0" + date : date;
+	return year + "-" + month + "-" + date
+}
+</wxs>
+
+<van-cell-group title="{{post.type}}">
+<van-cell is-link bind:click="toPostDetail">
+  <view slot="title">
+    <view style="font-weight:700;font-size:32rpx;margin-bottom:10rpx">{{post.subject}}</view>
+    <view style="color:#808080">
+    <view>
+    <van-icon name="location" />
+    {{post.location[1].name}}
+    </view>
+    <view>发布时间 Posted on: {{m1.dateFormat(post.created)}}</view>
+    </view>
+  </view>
+</van-cell>
+</van-cell-group>

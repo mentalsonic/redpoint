@@ -1,0 +1,30 @@
+<view wx:if="{{userInfo}}"
+style="width:750rpx;height:350rpx;background-color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:50rpx;position:relatice">
+<van-image round width="150rpx" height="150rpx" fit="cover" src="{{userInfo.avatarUrl}}" />
+<view style="margin-top: 20rpx;font-weight:700">
+{{userInfo.nickName}}
+</view>
+<view style="margin-top: 10rpx;color:#808080; font-size:25rpx">
+{{userInfo.province}} {{userInfo.city}}
+</view>
+<view style="position:absolute;top:20rpx;right:35rpx">
+<van-button size="small" bind:click="logout">退出登录 Sign out</van-button>
+</view>
+</view>
+
+<view wx:if="{{!userInfo}}"
+style="width:750rpx;height:200rpx;background-color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:50rpx;">
+<van-button type="primary" bind:click="toLoginPage">Login</van-button>
+</view>
+
+
+<van-cell-group title="我的 My">
+<block wx:for="{{tags}}" wx:key="index">
+  <van-cell isLink bind:click="goToMy" data-idx="{{index}}">
+    <view slot="title">
+      <text style="padding-right: 20rpx">{{item}}</text>
+      <van-tag round type="primary"> {{count[index]}} </van-tag>
+    </view>
+  </van-cell>
+</block>
+</van-cell-group>

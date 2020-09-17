@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "contactForm":"/components/contactForm/contactForm"
+  }
+}

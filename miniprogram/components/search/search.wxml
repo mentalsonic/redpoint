@@ -1,0 +1,6 @@
+<van-search 
+value="{{ value }}" 
+placeholder="搜索 Search..." 
+bind:search="onSearch"
+bind:change="onNoKeyword"
+/>

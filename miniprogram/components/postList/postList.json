@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "search":"/components/search/search",
+    "chooseType":"/components/chooseType/chooseType",
+    "postListItem":"/components/postListItem/postListItem",
+    "editBar": "/components/editBar/editBar"
+  },
+  "enablePullDownRefresh": true
+}

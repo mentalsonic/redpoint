@@ -1,0 +1,36 @@
+<van-cell-group title="联系方式 Contact Info">
+  <van-field
+    label="微信号"
+    clearable
+    value="{{ contact.wechat }}"
+    placeholder="WeChat ID"
+    name="wechat"
+    id="wechat"
+    bind:change="inputChange"
+    title-width="250rpx"
+  />
+    <van-field
+    label=" 邮箱"
+    clearable
+    value="{{ contact.email }}"
+    placeholder="Email"
+    name="email"
+    id="email"
+    bind:change="inputChange"
+    title-width="250rpx"
+  />
+    <van-field
+    label="手机号"
+    clearable
+    value="{{ contact.mobile }}"
+    placeholder="Mobile"
+    name="mobile"
+    id="mobile"
+    bind:change="inputChange"
+    title-width="250rpx"
+  />
+</van-cell-group>
+<van-divider contentPosition="center">
+输入至少一个联系方式。
+Enter at least ONE contact method.
+</van-divider>

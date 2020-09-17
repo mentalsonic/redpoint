@@ -1,0 +1,7 @@
+<mp-icon 
+type="outline" 
+icon="copy" 
+size="{{20}}" 
+bindtap="copy" 
+>
+</mp-icon>

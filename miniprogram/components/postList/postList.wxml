@@ -1,0 +1,31 @@
+
+<view style="display:flex;background:#fff">
+<view style="flex:1">
+<search 
+bind:onSearch="onSearch"
+bind:onNoKeyword="onNoKeyword"/>
+</view>
+<view style="padding:20rpx;" bindtap="toggleOrder">
+<van-icon name="{{order==='desc'?'descending':'ascending'}}" size="50rpx"/>
+</view>
+</view>
+
+<chooseType bind:changeType="changeType" selectedType="{{selectedType}}" wx:if="{{isHome}}"/>
+
+<block wx:for="{{posts}}" wx:key="index">
+<postListItem post="{{item}}"/>
+<editBar 
+wx:if="{{!isHome && owner===visitor}}"
+_id="{{item._id}}" 
+open="{{item.open}}" 
+files="{{item.files}}" 
+bind:onDelete="onShow"
+bind:onSwitchOpen="onShow"
+bind:showForm="showForm"/>
+</block>
+<van-divider
+content-position="center"
+wx:if="{{end}}"
+>
+结束 End
+</van-divider>

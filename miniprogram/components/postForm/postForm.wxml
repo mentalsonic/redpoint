@@ -1,0 +1,128 @@
+<view style="width:750rpx">
+<form catchsubmit="onSubmit" catchreset="formReset">
+<van-cell-group title="基本信息 Basic Info">
+
+<van-popup
+  show="{{areaShow}}"
+  round
+  position="bottom"
+  custom-style="height: 60%"
+  >
+<van-area
+title-width="250rpx"
+area-list="{{ areaList }}" 
+bind:cancel="hideArea"
+bind:confirm="areaConfirm"
+columns-num="{{ 2 }}"
+title="Choose area"
+value="310100"
+/>
+</van-popup>
+
+
+  <!-- subject start -->
+   <van-cell 
+  title-width="220rpx" 
+  title="标题" 
+  required
+  label="Subject"
+  >
+    <view style="text-align:left">
+    <van-field
+    show-word-limit
+    clearable
+    value="{{ formData.subject }}"
+    id="subject"
+    bind:change="inputChange"
+    maxlength="{{100}}"
+    border="{{ false }}"
+  />
+    </view>
+  </van-cell>
+<!-- subject end -->
+
+<!-- location start -->
+  <van-cell 
+  title-width="250rpx" 
+  title="地点" 
+  bind:click="showArea"
+  required
+  label="Location"
+  >
+    <view style="text-align:left">
+      {{ formData.location[0].name }} {{ formData.location[1].name }}
+    </view>
+  </van-cell>
+<!-- location end -->
+
+<!-- desc start -->
+   <van-cell 
+  title-width="220rpx" 
+  title="详情" 
+  required
+  label="Description"
+  >
+    <view style="text-align:left">
+    <van-field
+    title-width="220rpx"
+    value="{{ formData.desc }}"
+    type="textarea"
+    name="desc"
+    autosize
+    clearable
+    show-word-limit
+    id="desc"
+    bind:change="inputChange"
+    maxlength="{{1000}}"
+    border="{{ false }}"
+  />
+    </view>
+  </van-cell>
+<!-- desc end -->
+
+    <van-cell 
+  title-width="250rpx" 
+  title="截止日期" 
+  bind:click="showCalendar"
+  label="Expiration Date"
+  >
+    <view style="text-align:left">
+      {{ formData.exp }}
+    </view>
+  </van-cell>
+
+  <van-calendar
+  title="Choose your post expire date"
+  show="{{ calendarShow }}"
+  type="single"
+  bind:close="hideCalendar"
+  bind:confirm="onDateConfirm"
+  show-confirm="{{ false }}"
+  />
+</van-cell-group>
+
+<van-cell-group title="图片 Images"> 
+  <van-cell>
+  <view slot="title">
+      <van-uploader 
+      file-list="{{ fileList }}" 
+      deletable="{{ true }}" 
+      max-count="3"
+      bind:after-read="afterRead"
+      bind:delete="deleteFile"
+      accept="image"
+      sourceType="{{['album', 'camera']}}"
+      />
+  </view>
+  </van-cell>
+</van-cell-group>
+
+<contactForm bind:inputChange="contactChange" contact="{{contact}}"/>
+
+<view style="margin-top: 50rpx;margin-bottom: 50rpx;width:100%;display:flex;justify-content:space-evenly;">
+<view><van-button type="warning" formType="submit" round id="draft">草稿 Save as draft</van-button></view>
+<view><van-button type="primary" formType="submit" round id="post">发布 Post</van-button></view>
+</view>
+
+</form>
+</view>

@@ -1,0 +1,126 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"appid": "wxbbba261d4acdffa2",
+	"projectname": "WeClimb",
+	"libVersion": "2.12.2",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "Me",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "New",
+					"pathName": "pages/new/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Area",
+					"pathName": "pages/area/area",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "home",
+					"pathName": "pages/index/index",
+					"query": "_id=65825b355f477c8a0062e2f329dd754",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "post",
+					"pathName": "pages/post/post",
+					"query": "_id=b5416b755f5f7a2801c09e8c65cad109&openId=oRF1t5aNDP4W-8fguUygV8tN4eWA",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "My",
+					"pathName": "pages/my/my",
+					"query": "openId=oRF1t5aNDP4W-8fguUygV8tN4eWA&idx=0",
+					"scene": null
+				}
+			]
+		}
+	}
+}

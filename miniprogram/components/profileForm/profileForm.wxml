@@ -1,0 +1,33 @@
+<van-cell-group title="攀岩档案 Climbing Profile">
+  <van-field
+    label="岩龄 Climb year"
+    clearable
+    value="{{ exp }}"
+    placeholder="3"
+    type="number"
+    name="exp"
+    id="exp"
+    bind:change="inputChange"
+    title-width="300rpx"
+  />
+    <van-field
+    title-width="300rpx"
+    label="类型 Type of climb:"
+    clearable
+    value="{{ type }}"
+    placeholder="boulder/sport/trad/speed"
+    name="type"
+    id="type"
+    bind:change="inputChange"
+  />
+    <van-field
+    title-width="300rpx"
+    label="最高等级 Top grade:"
+    clearable
+    value="{{ mobile }}"
+    placeholder="eg. 18000000000"
+    name="mobile"
+    id="mobile"
+    bind:change="inputChange"
+  />
+</van-cell-group>

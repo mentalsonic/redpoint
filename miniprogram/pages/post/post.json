@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "copyBtn": "/components/copyBtn/copyBtn"
+  },
+  "navigationBarTitleText": "详情 Post Detail"
+}
