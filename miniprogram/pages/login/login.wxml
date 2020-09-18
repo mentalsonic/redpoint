@@ -3,14 +3,16 @@
 <view  style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:80vh">
 
 <view style="font-weight:700;font-size:45rpx;margin-bottom:25rpx">
-Welcome to WeClimb
+Welcome to RedPoint红点
 </view>
 
 <view style="color:#808080;margin-bottom:50rpx">
+请登陆您的账号
 Please login to your account
 </view>
 
 <van-button type="primary" round open-type="getUserInfo" bindgetuserinfo="login">
+微信登陆
 Login with WeChat
 </van-button>
 </view>
