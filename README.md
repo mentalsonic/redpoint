@@ -179,7 +179,8 @@ const LIMIT = 10
 
 # 作品体验二维码
 
-作品正在上线审核中，稍后更新二维码。
+体验版：
+![二维码](https://github.com/mentalsonic/RedPoint/blob/master/screenshot/oRF1t5aNDP4W-8fguUygV8tN4eWA.jpg)
 
 作品代码仓库：https://github.com/mentalsonic/RedPoint
 
