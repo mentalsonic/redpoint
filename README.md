@@ -198,6 +198,7 @@ Github主页：https://github.com/mentalsonic/
 
 # 部署教程
 
+[部署教程](https://github.com/mentalsonic/RedPoint/blob/master/deployment.md)
 
 # 开源协议
 

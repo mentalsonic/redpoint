@@ -8,7 +8,7 @@ https://github.com/mentalsonic/RedPoint.git
 
 # 修改参数
 
-无
+无需
 
 # 部署云函数
 
@@ -21,8 +21,8 @@ post
 
 # 云存储中需要上传文件
 
-无
+无需
 
 # 后台需要配置哪些服务
 
-无
+无需
